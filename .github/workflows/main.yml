@@ -18,9 +18,10 @@ jobs:
           jira-user: ${{ secrets.JIRA_USER }}
           jira-token: ${{ secrets.JIRA_TOKEN }}
           jira-base-url: https://mdlzintl.atlassian.net
+          skip-comments: true
           validate-issue-status: true
           allowed-issue-statuses: New
-          fail-on-error: false
+          fail-on-error: true
           
   salesforce:
     runs-on: ubuntu-latest
